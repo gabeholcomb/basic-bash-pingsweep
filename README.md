@@ -9,6 +9,6 @@ for host in {1..254}; do
     ping -c 1 $ip | grep "64 bytes" | cut -d " " -f 4 | tr -d ":" &
 done
 
-#note hashtags minus the shbang are just for notes so the last line here the hashtag isn't apart of the command 
+#note hashtags are just for notes so the last line here the hashtag isn't apart of the command 
 #to run in terminal save the file as a .sh then when in your terminal run the command below
 #./nameofyourfile.sh yournetworkaddress i.e. 192.168.1 assumming you have a /24 network with a subnetmask of 255.255.255.0
